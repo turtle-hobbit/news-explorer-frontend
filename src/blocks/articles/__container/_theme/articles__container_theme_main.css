@@ -1,0 +1,15 @@
+.articles__container_theme_main {
+  padding-bottom: 15px;
+}
+
+@media (min-width: 768px) {
+  .articles__container_theme_main {
+    padding-bottom: 22px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .articles__container_theme_main {
+    padding-bottom: 64px;
+  }
+}

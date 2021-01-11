@@ -1,0 +1,15 @@
+.articles__date {
+  color: #b6bcbf;
+  font-family: Source Sans Pro, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+  .articles__date {
+    margin-bottom: 12px;
+  }
+}

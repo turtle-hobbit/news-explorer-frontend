@@ -1,0 +1,18 @@
+@import url(./__image/about__image.css);
+@import url(./__title/about__title.css);
+@import url(./__content/about__content.css);
+@import url(./__text/about__text.css);
+
+.about {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  color: #000;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .about {
+    flex-direction: row;
+  }
+}

@@ -1,0 +1,11 @@
+.search__field {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .search__field {
+    flex-direction: row;
+    position: relative;
+  }
+}

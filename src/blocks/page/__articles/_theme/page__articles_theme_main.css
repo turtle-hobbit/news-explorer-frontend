@@ -1,0 +1,15 @@
+.page__articles_theme_main {
+  padding: 32px 16px;
+}
+
+@media (min-width: 768px) {
+  .page__articles_theme_main {
+    padding: 40px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .page__articles_theme_main {
+    padding: 80px 104px;
+  }
+}

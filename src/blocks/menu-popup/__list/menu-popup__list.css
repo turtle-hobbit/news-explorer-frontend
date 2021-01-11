@@ -1,0 +1,8 @@
+.menu-popup__list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin: 0;
+  padding: 16px 16px 24px;
+}

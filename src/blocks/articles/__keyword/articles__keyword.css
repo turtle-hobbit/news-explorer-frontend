@@ -1,0 +1,28 @@
+.articles__keyword {
+  background: #fff;
+  color: #000;
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  padding: 8px 12px;
+  border-radius: 10px;
+  position: absolute;
+  top: 16px;
+  left: 16px;
+}
+
+@media (min-width: 768px) {
+  .articles__keyword {
+    padding: 8px 8px;
+    top: 8px;
+    left: 8px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .articles__keyword {
+    top: 24px;
+    left: 24px;
+  }
+}

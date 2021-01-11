@@ -1,0 +1,23 @@
+.content__caption {
+  color:rgba(26, 27, 34, 0.5);
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 24px;
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+@media (min-width: 768px) {
+  .search__input {
+    font-size: 14px;
+    margin-bottom: 16px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .search__input {
+    font-size: 18px;
+    margin-bottom: 28px;
+  }
+}

@@ -1,0 +1,17 @@
+.header-search {
+  background-image: url(../../images/background-header-mobile.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (min-width: 768px) {
+  .header-search {
+    background-image: url(../../images/background-header-tablet.png);
+  }
+}
+
+@media (min-width: 1440px) {
+  .header-search {
+    background-image: url(../../images/background-header.png);
+  }
+}

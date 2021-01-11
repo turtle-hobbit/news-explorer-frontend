@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>NewsExplorer</title>
+  <link rel="shortcut icon" href="./images/favicon.png">
+  <link rel="stylesheet" href="./pages/index.css">
+</head>
+
+<body>
+  <div class="page">
+
+    <header class="header page__header header_theme_articles">
+      <h1 class="header__title">NewsExplorer</h1>
+      <div class="menu">
+        <ul class="menu__list">
+          <li class="menu__item"><a href="./index.html" class="link menu__link menu__link_theme_articles">Главная</a>
+          </li>
+          <li class="menu__item"><a href="./saved-articles.html"
+              class="link menu__link menu__link_theme_articles menu__link_type_active">Сохранённые статьи</a>
+          </li>
+          <li class="menu__item">
+            <button class="button menu__button menu__button_type_exit menu__button_theme_articles">Грета
+              <img src="./images/exit-articles.png" alt="Выход" class="menu__exit-icon">
+            </button>
+          </li>
+        </ul>
+        <img src="./images/menu-logo-articles.png" alt="Меню" class="menu__logo">
+      </div>
+    </header>
+
+    <section class="menu-popup section_type_inactive">
+      <div class="menu-popup__content">
+        <div class="menu-popup__header">
+          <h1 class="menu-popup__title">NewsExplorer</h1>
+          <button class="button menu-popup__close"></button>
+        </div>
+        <div class="menu">
+          <ul class="menu-popup__list">
+            <li class="menu__item"><a href="./index.html"
+                class="link menu__link menu__link_theme_main">Главная</a>
+            </li>
+            <li class="menu__item"><a href="./saved-articles.html"
+                class="link menu__link menu__link_theme_main">Сохранённые статьи</a>
+            </li>
+            <li class="menu__item">
+              <button class="button menu__button menu__button_type_exit menu__button_theme_main">Грета
+                <img src="./images/exit-main.png" alt="Выход" class="menu__exit-icon">
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="content page__content">
+      <p class="content__caption">Сохранённые статьи</p>
+      <h2 class="content__title">Грета, у вас 5 сохранённых статей</h2>
+      <p class="content__subtitle">По ключевым словам: <span class="content__keyword">Природа</span>, <span
+          class="content__keyword">Тайга</span> и <span class="content__keyword">2-м другим</span></p>
+    </section>
+
+    <section class="articles page__articles page__articles_theme_articles">
+      <div class="articles__container articles__container_theme_articles">
+        <div class="articles__item">
+          <a href="" class="link">
+            <div class="articles__image articles__image_theme_four"></div>
+            <div class="articles__keyword">Природа</div>
+            <button class="button articles__icon articles__icon_theme_trash" title="Убрать из сохранённых"></button>
+            <div class="articles__content">
+              <p class="articles__date">2 августа, 2019</p>
+              <h3 class="articles__item-title">Национальное достояние – парки</h3>
+              <p class="articles__item-subtitle">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала
+                складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться
+                к
+                природе.</p>
+              <p class="articles__link">Дзен</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="articles__item">
+          <a href="" class="link">
+            <div class="articles__image articles__image_theme_five"></div>
+            <div class="articles__keyword">Природа</div>
+            <button class="button articles__icon articles__icon_theme_trash" title="Убрать из сохранённых"></button>
+            <div class="articles__content">
+              <p class="articles__date">2 августа, 2019</p>
+              <h3 class="articles__item-title">Лесные огоньки: история одной фотографии</h3>
+              <p class="articles__item-subtitle">Фотограф отвлеклась от освещения суровой политической реальности
+                Мексики,
+                чтобы запечатлеть ускользающую красоту одного
+                из местных чудес природы.</p>
+              <p class="articles__link">Афиша</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="articles__item">
+          <a href="" class="link">
+            <div class="articles__image articles__image_theme_six"></div>
+            <div class="articles__keyword">Тайга</div>
+            <button class="button articles__icon articles__icon_theme_trash" title="Убрать из сохранённых"></button>
+            <div class="articles__content">
+              <p class="articles__date">2 августа, 2019</p>
+              <h3 class="articles__item-title">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</h3>
+              <p class="articles__item-subtitle">Знаменитый фотограф снимает первозданные леса России, чтобы рассказать
+                о
+                необходимости их сохранения. В этот раз он отправился в Двинско-Пинежскую тайгу, где...</p>
+              <p class="articles__link">Медиазона</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="articles__item">
+          <a href="" class="link">
+            <div class="articles__image articles__image_theme_four"></div>
+            <div class="articles__keyword">Парки</div>
+            <button class="button articles__icon articles__icon_theme_trash" title="Убрать из сохранённых"></button>
+            <div class="articles__content">
+              <p class="articles__date">2 августа, 2019</p>
+              <h3 class="articles__item-title">Национальное достояние – парки</h3>
+              <p class="articles__item-subtitle">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала
+                складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться
+                к
+                природе.</p>
+              <p class="articles__link">Дзен</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="articles__item">
+          <a href="" class="link">
+            <div class="articles__image articles__image_theme_five"></div>
+            <div class="articles__keyword">Фотография</div>
+            <button class="button articles__icon articles__icon_theme_trash" title="Убрать из сохранённых"></button>
+            <div class="articles__content">
+              <p class="articles__date">2 августа, 2019</p>
+              <h3 class="articles__item-title">Лесные огоньки: история одной фотографии</h3>
+              <p class="articles__item-subtitle">Фотограф отвлеклась от освещения суровой политической реальности
+                Мексики,
+                чтобы запечатлеть ускользающую красоту одного
+                из местных чудес природы.</p>
+              <p class="articles__link">Афиша</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer page__footer">
+      <p class="footer__signature">© 2021 Supersite, Powered by News API</p>
+      <div class="footer__content">
+        <ul class="footer__info">
+          <li class="footer__item"><a href="./index.html" class="link footer__link">Главная</a></li>
+          <li class="footer__item"><a href="https://praktikum.yandex.ru/" class="link footer__link"
+              target="__blanck">Яндекс.Практикум</a></li>
+        </ul>
+        <div class="footer__social">
+          <a href="https://github.com/turtle-hobbit/" class="footer__link" target="__blanck"><img
+              src="./images/github-icon.png" alt="Гитхаб" class="footer__icon"></a>
+          <a href="https://www.facebook.com/" class="footer__link" target="__blanck"><img
+              src="./images/facebook-icon.png" alt="Фейсбук" class="footer__icon"></a>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="./js/index.js"></script>
+</body>
+
+</html>

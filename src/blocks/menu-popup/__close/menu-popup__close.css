@@ -1,0 +1,7 @@
+.menu-popup__close {
+  border: 0;
+  background: url(../../../images/close.png);
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+}
