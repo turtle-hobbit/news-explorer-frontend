@@ -1,4 +1,4 @@
-class MenuPopup {
+export default class MenuPopup {
   constructor(popup, closeButton, openButton) {
     this.popup = popup;
     this.closeButton = closeButton;

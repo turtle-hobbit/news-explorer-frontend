@@ -1,8 +1,12 @@
+import "../pages/index.css";
+import MenuPopup from "./MenuPopup.js";
+import Popup from "./Popup.js";
+
 (function() {
   'use strict';
 
   const popupSignin = document.querySelector('#popupSignin');
-  const openFormSigninButton = document.querySelector('#popupSigninOpen');
+  const openFormSigninButton = document.querySelector('.menu__button_type_auth');
   const closeFormSigninButton = popupSignin.querySelector('#popupSigninClose');
 
   const popupSignup = document.querySelector('#popupSignup');

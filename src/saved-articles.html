@@ -7,13 +7,14 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>NewsExplorer</title>
   <link rel="shortcut icon" href="./images/favicon.png">
-  <link rel="stylesheet" href="./pages/index.css">
+  <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.css %>">
 </head>
 
 <body>
   <div class="page">
 
     <header class="header page__header header_theme_articles">
+<!-- Хедер -->
       <h1 class="header__title">NewsExplorer</h1>
       <div class="menu">
         <ul class="menu__list">
@@ -24,45 +25,21 @@
           </li>
           <li class="menu__item">
             <button class="button menu__button menu__button_type_exit menu__button_theme_articles">Грета
-              <img src="./images/exit-articles.png" alt="Выход" class="menu__exit-icon">
+              <img src="<%=require('./images/exit-articles.png')%>" alt="Выход" class="menu__exit-icon">
             </button>
           </li>
         </ul>
-        <img src="./images/menu-logo-articles.png" alt="Меню" class="menu__logo">
+        <img src="<%=require('./images/menu-logo-articles.png')%>" alt="Меню" class="menu__logo">
       </div>
     </header>
-
-    <section class="menu-popup section_type_inactive">
-      <div class="menu-popup__content">
-        <div class="menu-popup__header">
-          <h1 class="menu-popup__title">NewsExplorer</h1>
-          <button class="button menu-popup__close"></button>
-        </div>
-        <div class="menu">
-          <ul class="menu-popup__list">
-            <li class="menu__item"><a href="./index.html"
-                class="link menu__link menu__link_theme_main">Главная</a>
-            </li>
-            <li class="menu__item"><a href="./saved-articles.html"
-                class="link menu__link menu__link_theme_main">Сохранённые статьи</a>
-            </li>
-            <li class="menu__item">
-              <button class="button menu__button menu__button_type_exit menu__button_theme_main">Грета
-                <img src="./images/exit-main.png" alt="Выход" class="menu__exit-icon">
-              </button>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
+<!-- Информационный блок -->
     <section class="content page__content">
       <p class="content__caption">Сохранённые статьи</p>
       <h2 class="content__title">Грета, у вас 5 сохранённых статей</h2>
       <p class="content__subtitle">По ключевым словам: <span class="content__keyword">Природа</span>, <span
           class="content__keyword">Тайга</span> и <span class="content__keyword">2-м другим</span></p>
     </section>
-
+<!-- Сохранённые статьи -->
     <section class="articles page__articles page__articles_theme_articles">
       <div class="articles__container articles__container_theme_articles">
         <div class="articles__item">
@@ -150,7 +127,7 @@
         </div>
       </div>
     </section>
-
+<!-- Футер -->
     <footer class="footer page__footer">
       <p class="footer__signature">© 2021 Supersite, Powered by News API</p>
       <div class="footer__content">
@@ -161,13 +138,13 @@
         </ul>
         <div class="footer__social">
           <a href="https://github.com/turtle-hobbit/" class="footer__link" target="__blanck"><img
-              src="./images/github-icon.png" alt="Гитхаб" class="footer__icon"></a>
+              src="<%=require('./images/github-icon.png')%>" alt="Гитхаб" class="footer__icon"></a>
           <a href="https://www.facebook.com/" class="footer__link" target="__blanck"><img
-              src="./images/facebook-icon.png" alt="Фейсбук" class="footer__icon"></a>
+              src="<%=require('./images/facebook-icon.png')%>" alt="Фейсбук" class="footer__icon"></a>
         </div>
       </div>
     </footer>
-
+<!-- Попап-меню -->
     <section class="menu-popup" id="popupMenu">
       <div class="menu-popup__content">
         <div class="menu-popup__header">
@@ -183,7 +160,7 @@
             </li>
             <li class="menu__item menu__item_type_inactive">
               <button class="button menu__button menu__button_type_exit menu__button_theme_main">Грета
-                <img src="./images/exit-main.png" alt="Выход" class="menu__exit-icon">
+                <img src="<%=require('./images/exit-main.png')%>" alt="Выход" class="menu__exit-icon">
               </button>
             </li>
             <li class="menu__item"><button
@@ -193,9 +170,8 @@
         </div>
       </div>
     </section>
-
   </div>
-  <script src="./js/index.js"></script>
+  <script src="<%=htmlWebpackPlugin.files.js %>"></script>
 </body>
 
 </html>
