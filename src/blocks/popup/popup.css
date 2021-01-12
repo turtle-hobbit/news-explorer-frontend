@@ -21,7 +21,7 @@
   background-image: url(../../images/background-header-mobile.png);
   align-items: flex-end;
   justify-content: center;
-  display: flex;
+  display: none;
 }
 
 @media (min-width: 768px) {

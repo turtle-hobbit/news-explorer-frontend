@@ -29,11 +29,11 @@
                 <img src="./images/exit-main.png" alt="Выход" class="menu__exit-icon">
               </button>
             </li>
-            <li class="menu__item"><button
-                class="button menu__button menu__button_type_auth menu__button_theme_main">Авторизоваться</button>
+            <li class="menu__item"><button class="button menu__button menu__button_type_auth menu__button_theme_main"
+                id="popupSigninOpen">Авторизоваться</button>
             </li>
           </ul>
-          <img src="./images/menu-logo-main.png" alt="Меню" class="menu__logo">
+          <img src="./images/menu-logo-main.png" alt="Меню" class="menu__logo" id="popupMenuOpen">
         </div>
       </header>
 
@@ -143,11 +143,11 @@
       </div>
     </footer>
 
-    <section class="menu-popup section_type_inactive">
+    <section class="menu-popup" id="popupMenu">
       <div class="menu-popup__content">
         <div class="menu-popup__header">
           <h1 class="menu-popup__title">NewsExplorer</h1>
-          <button class="button menu-popup__close"></button>
+          <button class="button menu-popup__close" id="popupMenuClose"></button>
         </div>
         <div class="menu">
           <ul class="menu-popup__list">
@@ -169,9 +169,9 @@
       </div>
     </section>
 
-    <div class="popup" style="display: none">
+    <div class="popup" id="popupSignin">
       <div class="popup__content popup__content_type_auth">
-        <img src="./images/close-popup.png" alt="" class="popup__close">
+        <img src="./images/close-popup.png" alt="" class="popup__close" id="popupSigninClose">
         <h3 class="popup__title">Вход место</h3>
         <form class="popup__form" name="signin">
           <p class="popup__subtitle">Email</p>
@@ -182,16 +182,16 @@
           <input id="password" type="password" name="password" class="popup__input popup__input_type_password"
             minlength="8" required placeholder="Введите пароль">
           <span id="password-error" class="error"></span>
-          <button type="submit"
-            class="button button__search-popup popup__button popup__button_type_inactive">Войти</button>
-          <p class="popup__text">или <span class="popup__sign">Зарегистрироваться</span></p>
+          <button type="submit" class="button button__search-popup popup__button popup__button_type_inactive"
+            id="popupSuccessOpen">Войти</button>
+          <p class="popup__text">или <span class="popup__sign" id="popupSignupOpen">Зарегистрироваться</span></p>
         </form>
       </div>
     </div>
 
-    <div class="popup" style="display: none">
+    <div class="popup" id="popupSignup">
       <div class="popup__content popup__content_type_auth">
-        <img src="./images/close-popup.png" alt="" class="popup__close">
+        <img src="./images/close-popup.png" alt="" class="popup__close" id="popupSignupClose">
         <h3 class="popup__title">Регистрация</h3>
         <form class="popup__form" name="signup">
           <p class="popup__subtitle">Email</p>
@@ -212,15 +212,16 @@
       </div>
     </div>
 
-    <div class="popup" style="display: none">
+    <div class="popup" id="popupSuccess">
       <div class="popup__content popup__content_type_successful">
-        <img src="./images/close-popup.png" alt="" class="popup__close">
+        <img src="./images/close-popup.png" alt="" class="popup__close" id="popupSuccessClose">
         <h3 class="popup__title">Пользователь успешно зарегистрирован!</h3>
         <p class="popup__signin">Войти</p>
       </div>
     </div>
-
   </div>
+  <script src="./js/Popup.js"></script>
+  <script src="./js/MenuPopup.js"></script>
   <script src="./js/index.js"></script>
 </body>
 
