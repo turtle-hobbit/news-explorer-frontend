@@ -1,8 +1,0 @@
-@import url(./__content/results__content.css);
-@import url(./__image/results__image.css);
-@import url(./__title/results__title.css);
-@import url(./__subtitle/results__subtitle.css);
-
-.results {
-  background: #f5f6f7;
-}
