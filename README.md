@@ -1,7 +1,6 @@
 # Фронтенд приложения News explorer
 #### Версия: 1.2.0
 ---
-
 ### Описание:
 Фронтенд дипломного проекта по поиску новостных статей. Для сборки использован Webpack.  
 Github Pages: https://turtle-hobbit.github.io/news-explorer-frontend/index.html
@@ -26,6 +25,5 @@ npm run deploy // деплоит проект на Github Pages
 
 Пункты меню скрываются классом <b>menu__item_type_inactive</b>
 Блоки - классом <b>section_type_inactive</b>
-
 
 

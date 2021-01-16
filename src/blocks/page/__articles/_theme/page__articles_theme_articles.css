@@ -1,0 +1,15 @@
+.page__articles_theme_articles {
+  padding: 24px 16px 198px;
+}
+
+@media (min-width: 768px) {
+  .page__articles_theme_articles {
+    padding: 32px 40px 96px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .page__articles_theme_articles {
+    padding: 62px 102px 142px;
+  }
+}

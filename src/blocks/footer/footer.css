@@ -1,0 +1,33 @@
+@import url(./__signature/footer__signature.css);
+@import url(./__content/footer__content.css);
+@import url(./__info/footer__info.css);
+@import url(./__link/footer__link.css);
+@import url(./__social/footer__social.css);
+@import url(./__icon/footer__icon.css);
+@import url(./__item/footer__item.css);
+
+.footer {
+  height: 174px;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  background: #fff;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+@media (min-width: 768px) {
+  .footer {
+    height: 64px;
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1440px) {
+  .footer {
+    height: 80px;
+  }
+}

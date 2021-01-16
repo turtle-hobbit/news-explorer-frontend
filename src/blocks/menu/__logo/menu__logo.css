@@ -1,0 +1,11 @@
+.menu__logo {
+  height: 24px;
+  width: 24px;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .menu__logo {
+    display: none;
+  }
+}

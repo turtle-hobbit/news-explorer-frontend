@@ -1,0 +1,9 @@
+.popup__content_type_auth {
+  padding: 16px;
+}
+
+@media (min-width: 768px) {
+  .popup__content_type_auth {
+    padding: 34px 36px 28px;
+  }
+}
