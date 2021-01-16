@@ -1,0 +1,15 @@
+.header-search__picture {
+  max-height: 536px;
+}
+
+@media (min-width: 768px) {
+  .header-search__picture {
+    max-height: 400px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .header-search__picture {
+    max-height: 576px;
+  }
+}

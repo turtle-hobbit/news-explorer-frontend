@@ -1,17 +1,8 @@
+@import url(./__background/header-search__background.css);
+@import url(./__picture/header-search__picture.css);
+
 .header-search {
-  background-image: url(../../images/background-header-mobile.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-@media (min-width: 768px) {
-  .header-search {
-    background-image: url(../../images/background-header-tablet.png);
-  }
-}
-
-@media (min-width: 1440px) {
-  .header-search {
-    background-image: url(../../images/background-header.png);
-  }
+  position: relative;
+  display: flex;
+  justify-content: center;
 }

@@ -2,7 +2,6 @@
 @import url(./__header/menu-popup__header.css);
 @import url(./__title/menu-popup__title.css);
 @import url(./__close/menu-popup__close.css);
-@import url(./__list/menu-popup__list.css);
 
 .menu-popup {
   position: fixed;

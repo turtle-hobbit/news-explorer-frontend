@@ -14,7 +14,6 @@
     grid-gap: 8px;
     grid-template-columns: repeat(auto-fit, 224px);
     grid-template-rows: 420px;
-    justify-content: flex-start;
   }
 }
 

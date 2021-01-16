@@ -8,4 +8,18 @@
   color: #fff;
   width: max-content;
   margin: 0 auto;
+  position: absolute;
+  top: 56px;
+}
+
+@media (min-width: 768px) {
+  .search {
+    top: 66px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .search {
+    top: 80px;
+  }
 }

@@ -7,10 +7,13 @@ const path = require('path');
 const webpack = require('webpack');
 
 module.exports = {
-  entry: { main: './src/js/index.js' },
+  entry: {
+    index: './src/js/index.js',
+    articles: './src/js/savedArticles.js'
+  },
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: '[name].[chunkhash].js'
+    filename: 'js/[name].[chunkhash].js'
   },
   module: {
     rules: [
@@ -52,7 +55,8 @@ module.exports = {
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: 'style.[contenthash].css'
+      filename: "css/[name].[contenthash].css",
+      chunkFilename: "[id].[contenthash].css"
     }),
     new OptimizeCssAssetsPlugin({
         assetNameRegExp: /\.css$/g,
@@ -64,11 +68,13 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       inject: false,
+      chunks: ['index'],
       template: './src/index.html',
       filename: 'index.html'
     }),
     new HtmlWebpackPlugin({
       inject: false,
+      chunks: ['articles'],
       template: './src/saved-articles.html',
       filename: 'saved-articles.html'
     }),

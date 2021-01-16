@@ -1,7 +1,7 @@
 @import url(./_type/menu__item_type_inactive.css);
 
 .menu__item {
-  font-family: Roboto;
+  font-family: Roboto, Arial, sans-serif;
   font-weight: 500;
   font-size: 18px;
   line-height: 56px;
