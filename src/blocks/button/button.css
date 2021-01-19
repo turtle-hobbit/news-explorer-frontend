@@ -1,8 +1,0 @@
-@import url(./__search-popup/button__search-popup.css);
-
-.button {
-  border-radius: 100px;
-  cursor: pointer;
-  padding: 0;
-  transition: .3s linear;
-}

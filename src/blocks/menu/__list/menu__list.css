@@ -1,7 +1,0 @@
-@import url(./_type/menu__list_type_header.css);
-@import url(./_type/menu__list_type_popup.css);
-
-.menu__list {
-  margin: 0;
-  list-style: none;
-}
