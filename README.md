@@ -25,5 +25,3 @@ npm run deploy // деплоит проект на Github Pages
 
 Пункты меню скрываются классом <b>menu__item_type_inactive</b>
 Блоки - классом <b>section_type_inactive</b>
-
-
