@@ -25,7 +25,12 @@ module.exports = {
       {
         test: /\.css$/,
         use: [
-          (isDev ? 'style-loader' : MiniCssExtractPlugin.loader),
+          (isDev
+            ? 'style-loader'
+            : {
+              loader: MiniCssExtractPlugin.loader,
+              options: { publicPath: '../' }
+            }),
           {
             loader: 'css-loader',
             options: { importLoaders: 2 }
@@ -45,7 +50,13 @@ module.exports = {
       {
         test: /\.(png|jpg|gif|ico|svg)$/,
         use: [
-          'file-loader?name=./images/[name].[ext]&esModule=false',
+          {
+            loader: 'file-loader',
+            options: {
+              name: './images/[name].[ext]',
+              esModule: false
+            }
+          },
           {
             loader: 'image-webpack-loader',
             options: {}
@@ -56,31 +67,28 @@ module.exports = {
   plugins: [
     new MiniCssExtractPlugin({
       filename: "css/[name].[contenthash].css",
-      chunkFilename: "[id].[contenthash].css"
     }),
     new OptimizeCssAssetsPlugin({
-        assetNameRegExp: /\.css$/g,
-        cssProcessor: require('cssnano'),
-        cssProcessorPluginOptions: {
-            preset: ['default'],
-        },
-        canPrint: true
+      assetNameRegExp: /\.css$/g,
+      cssProcessor: require('cssnano'),
+      cssProcessorPluginOptions: {
+        preset: ['default'],
+      },
+      canPrint: true
     }),
     new HtmlWebpackPlugin({
-      inject: false,
       chunks: ['index'],
       template: './src/index.html',
       filename: 'index.html'
     }),
     new HtmlWebpackPlugin({
-      inject: false,
       chunks: ['articles'],
       template: './src/saved-articles.html',
       filename: 'saved-articles.html'
     }),
     new WebpackMd5Hash(),
     new webpack.DefinePlugin({
-        'NODE_ENV': JSON.stringify(process.env.NODE_ENV)
+      'NODE_ENV': JSON.stringify(process.env.NODE_ENV)
     })
   ]
 }

@@ -13,6 +13,7 @@
   line-height: 22px;
   color: #1a1b22;
   padding: 16px;
+  caret-color: #2f71e5;
 }
 
 .search__input::placeholder {
