@@ -1,0 +1,8 @@
+@import url(./__background/header-search__background.css);
+@import url(./__picture/header-search__picture.css);
+
+.header-search {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}

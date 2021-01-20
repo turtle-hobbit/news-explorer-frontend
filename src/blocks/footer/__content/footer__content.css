@@ -1,0 +1,11 @@
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+@media (min-width: 768px) {
+  .footer__content {
+    margin-bottom: 0;
+  }
+}

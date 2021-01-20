@@ -1,0 +1,20 @@
+.articles__link {
+  color: #b6bcbf;
+  font-family: Roboto Slab, 'Times New Roman', serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  margin: 0;
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+}
+
+@media (min-width: 1440px) {
+  .articles__link {
+    bottom: 24px;
+    left: 24px;
+  }
+}

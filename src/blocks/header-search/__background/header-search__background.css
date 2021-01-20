@@ -1,0 +1,20 @@
+.header-search__background {
+  width: 100vw;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: 0 0;
+  max-height: 536px;
+}
+
+@media (min-width: 768px) {
+  .header-search__background {
+    max-height: 400px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .header-search__background {
+    max-height: 576px;
+  }
+}

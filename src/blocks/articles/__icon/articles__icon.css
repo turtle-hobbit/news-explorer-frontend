@@ -1,0 +1,30 @@
+@import url(./_theme/articles__icon_theme_saved.css);
+@import url(./_theme/articles__icon_theme_trash.css);
+
+.articles__icon {
+  background-color: #fff;
+  padding: 8px;
+  border-radius: 8px;
+  box-sizing: border-box;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  transition: .5s ease-in-out;
+}
+
+@media (min-width: 768px) {
+  .articles__icon {
+    top: 8px;
+    right: 8px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .articles__icon {
+    top: 24px;
+    right: 24px;
+  }
+}
