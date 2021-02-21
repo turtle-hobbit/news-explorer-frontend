@@ -6,7 +6,6 @@
 Для просмотра воспользуйтесь следующими адресами:
 + https://www.search-news.students.nomoreparties.space  
 + https://search-news.students.nomoreparties.space  
-+ Github Pages: https://turtle-hobbit.github.io/news-explorer-frontend/index.html
 
 ### Инструкция по развёртыванию:
 1. Скопируйте репозиторий с проектом на свой компьютер
