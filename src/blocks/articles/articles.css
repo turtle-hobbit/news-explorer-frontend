@@ -10,6 +10,7 @@
 @import url(./__button/articles__button.css);
 @import url(./__content/articles__content.css);
 @import url(./__keyword/articles__keyword.css);
+@import url(./__text/articles__text.css);
 
 .articles {
   background: #f5f6f7;

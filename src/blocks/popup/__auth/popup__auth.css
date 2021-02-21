@@ -1,0 +1,12 @@
+.popup__auth {
+  background-image: url(../../../images/background-header-mobile.png);
+  align-items: flex-end;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .popup__auth {
+    align-items: center;
+    background-image: none;
+  }
+}

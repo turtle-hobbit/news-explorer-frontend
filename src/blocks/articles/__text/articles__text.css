@@ -1,0 +1,16 @@
+.articles__text {
+  max-height: 150px;
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .articles__text {
+    max-height: 170px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .articles__text {
+    max-height: 190px;
+  }
+}

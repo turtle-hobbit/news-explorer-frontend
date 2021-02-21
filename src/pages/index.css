@@ -16,6 +16,7 @@
 @import url(../blocks/results/results.css);
 @import url(../blocks/popup/popup.css);
 @import url(../blocks/error/error.css);
+@import url(../blocks/preloader/preloader.css);
 
 body {
   background-color: #fff;
