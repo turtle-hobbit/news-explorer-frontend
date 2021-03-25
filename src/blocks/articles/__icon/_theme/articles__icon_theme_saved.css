@@ -8,7 +8,3 @@
 .articles__icon_theme_saved:hover {
   background-image: url(../../../../images/icon-hover.png);
 }
-
-.articles__icon_theme_saved:active {
-  background-image: url(../../../../images/icon-marked.png);
-}

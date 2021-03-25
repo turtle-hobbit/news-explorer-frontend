@@ -1,4 +1,18 @@
 .articles__image {
   width: 100%;
-  height: auto;
+  height: 196px;
+  object-fit: cover;
+  object-position: left;
+}
+
+@media (min-width: 768px) {
+  .articles__image {
+    height: 150px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .articles__image {
+    height: 272px;
+  }
 }

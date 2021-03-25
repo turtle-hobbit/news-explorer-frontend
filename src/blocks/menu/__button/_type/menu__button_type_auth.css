@@ -3,13 +3,13 @@
 }
 
 @media (min-width: 768px) {
-  .menu__button {
+  .menu__button_type_auth {
     width: 152px;
   }
 }
 
 @media (min-width: 1440px) {
-  .menu__button {
+  .menu__button_type_auth {
     width: 176px;
   }
 }

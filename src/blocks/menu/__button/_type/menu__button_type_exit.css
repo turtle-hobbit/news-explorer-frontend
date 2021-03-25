@@ -1,18 +1,6 @@
 .menu__button_type_exit {
-  width: 288px;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-@media (min-width: 768px) {
-  .menu__button_type_exit {
-    width: 100px;
-  }
-}
-
-@media (min-width: 1440px) {
-  .menu__button_type_exit {
-    width: 112px;
-  }
+  padding: 0 16px;
 }

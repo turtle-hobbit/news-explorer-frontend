@@ -9,7 +9,7 @@ const webpack = require('webpack');
 module.exports = {
   entry: {
     index: './src/js/index.js',
-    articles: './src/js/savedArticles.js'
+    articles: './src/js/saved-articles/index.js'
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -74,14 +74,15 @@ module.exports = {
       cssProcessorPluginOptions: {
         preset: ['default'],
       },
-      canPrint: true
     }),
     new HtmlWebpackPlugin({
+      inject: false,
       chunks: ['index'],
       template: './src/index.html',
       filename: 'index.html'
     }),
     new HtmlWebpackPlugin({
+      inject: false,
       chunks: ['articles'],
       template: './src/saved-articles.html',
       filename: 'saved-articles.html'
@@ -90,5 +91,6 @@ module.exports = {
     new webpack.DefinePlugin({
       'NODE_ENV': JSON.stringify(process.env.NODE_ENV)
     })
-  ]
+  ],
+  devtool: 'eval-source-map'
 }
